@@ -11,7 +11,7 @@ pip install -r requirements.txt
 pip install git+https://github.com/pabloppp/pytorch-tools
 
 # Download the dataset
-wget https://huggingface.co/datasets/justinpinkney/pokemon-blip-captions-wds/resolve/main/pokemon.tar?download=true
+wget https://huggingface.co/datasets/justinpinkney/pokemon-blip-captions-wds/resolve/main/pokemon.tar
 
 # Download pretrained models
 wget https://huggingface.co/dome272/wuerstchen/resolve/main/model_v2_stage_b.pt
