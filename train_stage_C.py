@@ -68,8 +68,8 @@ val_caps = [
 
 def train(n_nodes=1):
     # assuming 1 node here
-    gpu_id = int(os.environ["LOCAL_RANK"])
-    world_size = int(os.environ["WORLD_SIZE"])
+    gpu_id = int(os.environ["LOCAL_RANK"] or 0)
+    world_size = int(os.environ["WORLD_SIZE"] or 1)
     torch.cuda.set_device(gpu_id)
     main_node = gpu_id == 0
     device = torch.device(gpu_id)

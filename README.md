@@ -11,6 +11,7 @@ conda create --name w2 python=3.10.12
 conda activate w2
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
 pip install -r requirements.txt
+pip install git+https://github.com/pabloppp/pytorch-tools
 ```
 
 - edit parameters in `train_stage_C.py`
