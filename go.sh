@@ -1,1 +1,1 @@
-torchrun --nnodes=1 --nproc-per-node=2 train_stage_C.py
+torchrun --nnodes=1 --nproc-per-node=1 train_stage_C.py
