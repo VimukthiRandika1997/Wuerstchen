@@ -10,7 +10,7 @@ experiments
 temp_move
 pablo
 svdiff
-test.py
+# test.py
 diffnext_v2.py
 diffnext_v2_ldm.py
 train_würstchen_prior_consistency.py
