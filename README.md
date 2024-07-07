@@ -1,3 +1,35 @@
+
+
+```
+# Installation
+git clone https://github.com/VimukthiRandika1997/Wuerstchen.git
+cd Wuerstchen
+conda create --name w2 python=3.10.12
+conda activate w2
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+pip install -r requirements.txt
+pip install git+https://github.com/pabloppp/pytorch-tools
+
+# Download the dataset
+wget https://huggingface.co/datasets/justinpinkney/pokemon-blip-captions-wds/resolve/main/pokemon.tar?download=true
+
+# Download pretrained models
+wget https://huggingface.co/dome272/wuerstchen/resolve/main/model_v2_stage_b.pt
+wget https://huggingface.co/dome272/wuerstchen/resolve/main/model_v2_stage_c_finetune_interpolation.pt
+wget https://huggingface.co/dome272/wuerstchen/resolve/main/vqgan_f4_v1_500k.pt
+
+mkdir models
+mv vqgan_f4_v1_500k.pt models
+mv model_v2_stage_c_finetune_interpolation.pt models
+mv model_v2_stage_b.pt models
+
+# Training
+# edit train_stage_C.py
+bash custom_dataset_train.sh
+```
+
+## Old Training
+
 Update stage C training script for v2 model.
 
 - download v2 pretrained models as in stage-C notebooks
@@ -5,6 +37,7 @@ Update stage C training script for v2 model.
 - install repo
 
 ```
+# Installation
 git clone https://github.com/VimukthiRandika1997/Wuerstchen.git
 cd Wuerstchen
 conda create --name w2 python=3.10.12
@@ -13,6 +46,7 @@ pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
 pip install -r requirements.txt
 pip install git+https://github.com/pabloppp/pytorch-tools
 ```
+
 
 - edit parameters in `train_stage_C.py`
 - run with torch run (e.g. `./go.sh`)

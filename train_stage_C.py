@@ -58,7 +58,7 @@ val_caps = [
     "Hello Kitty",
     "An old man looking at the moon",
     "Donald Trump",
-    "Yoda",
+    "Joe Biden",
     "A hungry dog",
     "A watermelon",
     "Bowl of delicous soup"
