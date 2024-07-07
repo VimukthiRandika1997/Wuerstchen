@@ -51,7 +51,7 @@ vq_model_path = "models/vqgan_f4_v1_500k.pt"
 stage_b_model_path = "models/model_v2_stage_b.pt"
 
 wandb_project = "w2"
-wandb_entity = "justinpinkney"
+wandb_entity = "vimukthirandika1997"
 wandb_run_name = run_name
 
 val_caps = [

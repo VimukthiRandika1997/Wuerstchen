@@ -5,9 +5,10 @@ Update stage C training script for v2 model.
 - install repo
 
 ```
-git clone https://github.com/justinpinkney/Wuerstchen.git
+git clone https://github.com/VimukthiRandika1997/Wuerstchen.git
 cd Wuerstchen
 conda create --name w2 python=3.10.12
+conda activate w2
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
 pip install -r requirements.txt
 ```
@@ -20,7 +21,6 @@ After 4750 iterations the outputs look like this (ema top, non-ema bottom):
 
 ![](pokemon-004750.jpg)
 
-I'll let others do fancy things like Dreambooth, lora, etc.
 
 
 
