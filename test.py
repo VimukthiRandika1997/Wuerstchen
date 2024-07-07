@@ -24,16 +24,16 @@ from transformers.utils import is_torch_bf16_available, is_torch_tf32_available
 transformers.utils.logging.set_verbosity_error()
 
 # PARAMETERS
-updates = 10000
-warmup_updates = 1000
+updates = 100
+warmup_updates = 10
 ema_start = 0
-ema_every = 100
+ema_every = 2
 ema_beta = 0.9
-batch_size = 8
+batch_size = 4
 grad_accum_steps = 1
 max_iters = updates * grad_accum_steps
-print_every = 250 * grad_accum_steps
-extra_ckpt_every = 1000 * grad_accum_steps
+print_every = 5 * grad_accum_steps
+extra_ckpt_every = 10 * grad_accum_steps
 lr = 1e-4
 
 dataset_path = "pokemon.tar"
