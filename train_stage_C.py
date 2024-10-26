@@ -24,7 +24,7 @@ from transformers.utils import is_torch_bf16_available, is_torch_tf32_available
 transformers.utils.logging.set_verbosity_error()
 
 # PARAMETERS
-updates = 10000
+updates = 5000
 warmup_updates = 1000
 ema_start = 0
 ema_every = 100
